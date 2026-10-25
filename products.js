@@ -1,16 +1,16 @@
 // ===== Product catalog: add new trap models here; cards render automatically. =====
 // status: "available" | "coming-soon". image: path in assets/ or "" for a placeholder.
 window.RODENTWEB_PRODUCTS = [
-  { name: "RodentWeb RW-100", status: "available", image: "assets/products/rw-100/rw-100-logo.jpg",
-    gallery: ["assets/products/rw-100/rw-100-1.jpg", "assets/products/rw-100/rw-100-2.jpg"],
+  { name: "RodentWeb RW-100", status: "available", image: "assets/products/rw-100/rw-100-closed-1.jpg",
+    gallery: ["assets/products/rw-100/rw-100-closed-2.jpg", "assets/products/rw-100/rw-100-closed-3.jpg", "assets/products/rw-100/rw-100-1.jpg", "assets/products/rw-100/rw-100-2.jpg"],
     blurb: "Reusable plastic snap trap with a removable bait cup and serrated jaws.",
     specs: ["Size: [TBD]", "Material: [TBD plastic]", "Pack sizes: [TBD]", "Price: [TBD]"] },
-  { name: "RodentWeb RW-200 Pro", status: "available", image: "assets/products/rw-200-pro/rw-200-pro-logo.jpg",
-    gallery: ["assets/products/rw-200-pro/rw-200-pro-1.jpg", "assets/products/rw-200-pro/rw-200-pro-2.jpg"],
+  { name: "RodentWeb RW-200 Pro", status: "available", image: "assets/products/rw-200-pro/rw-200-pro-closed-1.jpg",
+    gallery: ["assets/products/rw-200-pro/rw-200-pro-closed-2.jpg", "assets/products/rw-200-pro/rw-200-pro-closed-3.jpg", "assets/products/rw-200-pro/rw-200-pro-closed-4.jpg", "assets/products/rw-200-pro/rw-200-pro-1.jpg", "assets/products/rw-200-pro/rw-200-pro-2.jpg"],
     blurb: "Reusable plastic snap trap with a wide bait pedal and serrated jaws.",
     specs: ["Size: [TBD]", "Material: [TBD plastic]", "Pack sizes: [TBD]", "Price: [TBD]"] },
-  { name: "RodentWeb RW-300 Max", status: "available", image: "assets/products/rw-300-max/rw-300-max-logo.jpg",
-    gallery: ["assets/products/rw-300-max/rw-300-max-1.jpg", "assets/products/rw-300-max/rw-300-max-2.jpg", "assets/products/rw-300-max/rw-300-max-3.jpg", "assets/products/rw-300-max/rw-300-max-4.jpg"],
+  { name: "RodentWeb RW-300 Max", status: "available", image: "assets/products/rw-300-max/rw-300-max-closed-1.jpg",
+    gallery: ["assets/products/rw-300-max/rw-300-max-closed-2.jpg", "assets/products/rw-300-max/rw-300-max-1.jpg", "assets/products/rw-300-max/rw-300-max-2.jpg", "assets/products/rw-300-max/rw-300-max-3.jpg", "assets/products/rw-300-max/rw-300-max-4.jpg"],
     blurb: "Reusable plastic snap trap with a perforated bait pedal and removable bait cup.",
     specs: ["Size: [TBD]", "Material: [TBD plastic]", "Pack sizes: [TBD]", "Price: [TBD]"] }
 ];
