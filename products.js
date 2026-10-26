@@ -19,9 +19,9 @@ window.RODENTWEB_PRODUCTS = [
   var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})};
   g.innerHTML=window.RODENTWEB_PRODUCTS.map(function(p){
     var soon=p.status==="coming-soon";
-    var media=p.image?'<img src="'+esc(RW_SRC(p.image))+'" alt="'+esc(p.name)+'" loading="lazy" width="640" height="360">':'<div class="ph">Image coming soon</div>';
+    var media=p.image?'<img class="zoom" data-key="'+esc(p.image)+'" src="'+esc(RW_SRC(p.image))+'" alt="'+esc(p.name)+'" loading="lazy" width="640" height="360">':'<div class="ph">Image coming soon</div>';
     return '<article class="card product">'+media+'<div class="body"><span class="tag'+(soon?' soon':'')+'">'+(soon?'Coming soon':'Available')+'</span><h3>'+esc(p.name)+'</h3><p>'+esc(p.blurb)+'</p>'+
       (p.specs.length?'<ul>'+p.specs.map(function(s){return '<li>'+esc(s)+'</li>'}).join('')+'</ul>':'')+
-      (p.gallery&&p.gallery.length?'<div class="gallery">'+p.gallery.map(function(s){return '<img src="'+esc(RW_SRC(s))+'" alt="'+esc(p.name)+' view" loading="lazy">'}).join('')+'</div>':'')+'<a href="#contact">'+(soon?'Get notified':'Ask about this model')+' &rarr;</a></div></article>';
+      (p.gallery&&p.gallery.length?'<div class="gallery">'+p.gallery.map(function(s){return '<img class="zoom" data-key="'+esc(s)+'" src="'+esc(RW_SRC(s))+'" alt="'+esc(p.name)+' view" loading="lazy">'}).join('')+'</div>':'')+'<a href="#contact">'+(soon?'Get notified':'Ask about this model')+' &rarr;</a></div></article>';
   }).join("");
 })();
